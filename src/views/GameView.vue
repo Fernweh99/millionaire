@@ -13,7 +13,7 @@
             :key="res.label"
             class="col-12 col-md-6 d-flex justify-content-center"
           >
-            <ContainerComponent :text="res.label" @click="result(res.state)"/>
+            <ContainerComponent class="res" :text="res.label" @click="result(res.state)"/>
           </div>
         </div>
       </div>
@@ -107,5 +107,8 @@ export default {
     #logo {
     height: 300px;
   }
+  }
+  .res {
+    cursor: pointer;
   }
 </style>

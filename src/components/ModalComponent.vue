@@ -36,18 +36,16 @@ export default {
       textGameover2: "Nuova Partita",
     }
   },
-  mounted(){
-    if (this.state == "continue") {
-      this.textBtn1 = "Incassa";
-      this.textBtn2 = "Continua";
-    } else if (this.state == "gameover") {
-      this.textBtn1 = "Torna alla Home";
-      this.textBtn2 = "Nuova Partita";
-    }
-  }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  .modal-content {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    width: 500px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+  }
 </style>
